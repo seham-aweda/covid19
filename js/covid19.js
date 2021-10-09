@@ -36,7 +36,7 @@ async function getCountry() {
   });
   window.localStorage.setItem("countries", JSON.stringify(countryArray));
 }
-// getCountry()
+getCountry()
 let getCount = JSON.parse(window.localStorage.getItem("countries"));
 console.log(getCount)
 
@@ -52,7 +52,7 @@ async function getRegion() {
   });
   window.localStorage.setItem("regions", JSON.stringify(regionArray));
 }
-// getRegion();
+getRegion();
 let getReg = JSON.parse(window.localStorage.getItem("regions"));
 
 //------------------- CHARTING--------------------
