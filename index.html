@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/covid19.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="corona">
+        <input type="button" value="LETS SEE SOME STATISTICS" class="cont" />
+      </div>
+      <div class="inner">
+        <div class="myChart">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="regions">
+          <input type="button" value="Asia" class="Asia"/>
+          <input type="button" value="Europe" class="Europe"/>
+          <input type="button" value="Africa" class="Africa"/>
+          <input type="button" value="Oceania" class="Oceania"/>
+          <input type="button" value="Americas" class="Americas"/>
+        </div>
+      
+        <div class="countries">
+          <select name="country" id="country">
+          </select>
+        </div>
+        <div class="info-country">
+          <div class="butn totalCases">
+            <p>Total Cases</p>
+            <p class="num1"></p>
+          </div>
+          <div class="butn newCases">
+            <p>New Cases</p>
+            <p class="num2"></p>
+          </div>
+          <div class="butn totalDeath">
+            <p>Total Deathes</p>
+            <p class="num3"></p>
+          </div>
+          <div class="butn newDeathes">
+            <p>New Deathes</p>
+            <p class="num4"></p>
+          </div>
+          <div class="butn totalRecovered">
+            <p>Total Recovered</p>
+            <p class="num5"></p>
+          </div>
+          <div class="butn critical">
+            <p>Critical</p>
+            <p class="num6"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/covid19.js"></script>
+  </body>
+</html>
